@@ -1,0 +1,50 @@
+{% import "bootstrap/wtf.html" as wtf %}
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/style.css">
+
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		
+		
+		
+		
+		
+		<div class="user">
+			
+			<header class="user__header">
+				<div class ="log">
+				<h1 class="user__title">LOG-IN </h1>
+				</div>
+					
+					<form method="POST" action="/login">
+						{{form.hidden_tag()}}
+						<div class="error">
+							{{msg}}
+						</div>
+						<div class="text_user">
+							<p>Insert Username</p>
+							{{form.username}}
+						</div>
+						<div class="text_pwd">
+							<p>Insert Password</p>
+							{{form.password}}
+						</div>
+						<div class="bottom">
+							<!--<input type="submit" name="submit" value="ACCEDI">ACCEDI</input>-->
+							{{form.submit}}
+						</div>
+					</form>
+
+	
+					<a href="{{url_for('home')}}"><button class="user5" type="button">Return Home page</button></a>
+					
+					<a href="{{url_for('register')}}"><button class ="user5"type="button">don't have an account?</button></a>
+			
+	</body>
+</html>

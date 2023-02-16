@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+{%import "bootstrap/wtf.html" as wtf %}
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <body>
+    
+    
+    
+    <div class="user">
+
+    <div class="reg">
+        <h1>Registration</h1>
+    </div>
+      <form method="POST" action= "{{ request.path }}">
+        
+        {{form.hidden_tag()}}
+        
+        {%if request.path=='/register'%}
+        
+        
+        <div class="text_email">
+          <p>Insert E-mail</p>
+          {{form.email}}
+        </div>
+        
+        <div class="text_username">
+          <p>Insert Username</p>
+          {{form.username}}
+        </div>
+        
+        <div class="text_password">
+          <p>Insert Password</p>
+          <!--<input type="password" class="parola" placeholder="inserisci la password">-->
+          {{form.password}}
+        </div>
+        
+        <div class="text_city">
+          <p>Insert City</p>
+          <input type="text" id="city">
+        </div>
+        
+        <div class="text_cap">
+          <p>Insert CAP</p>
+          <input type="text" id="cap">
+        </div>
+        
+        <div class="text_street">
+          <p>Insert Street Name</p>
+          <input type="text" id="sname">
+        </div>
+        
+        <div class="text_cap">
+          <p>Insert Card Number (Optional)</p>
+          <input type="text" id="cap">
+        </div>
+
+        
+        <div class="button">
+          {{form.submit}}
+        </div>
+        
+        
+        
+        
+        
+        <div class="warning">
+          <div class="warn_title">
+          
+          </div>
+          <div class="error1">
+            {% for error in form.email.errors %}
+            {{ error }}
+            {% endfor%}
+          </div>
+          <div class="error1">
+            {% for error in form.username.errors %}
+            {{ error }}
+            {% endfor%}
+          </div>
+          <div class="error1">
+            {% for error in form.password.errors %}
+            {{ error }}
+            {% endfor%}
+          </div>
+        </div>
+        
+        
+      {%endif%}
+      
+      
+      
+            
+      
+      
+      </form>
+    
+    </div>
+    <div class="user2">
+      
+      <a href="{{url_for('home')}}"><button class="user2" type="button">Return Home page</button></a>
+      <a href="{{url_for('login')}}"><button class="user2" type="button">Want Log-in?</button></a>
+      
+    </div>
+</body>
+</html>

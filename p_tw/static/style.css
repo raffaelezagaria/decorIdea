@@ -1,0 +1,240 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body{
+		background-image: url(/static/background.jpg);
+		background-repeat: repeat-x;
+		background-attachment: fixed;
+		background-size: 1536px 920px;
+}
+
+.navbar{
+ width: 100%;
+ margin: auto;
+ padding-top: 40px 0;
+ position:relative;
+ top: 20px;
+ display: flex;
+ align-items: flex-start;
+ justify-content: left;
+}
+
+.navbar ul li{
+	list-style:  none;
+	display: inline-block;
+	grid-gap: inherit;
+	margin: 1px 20px;
+	position: relative;
+}
+
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width:100%;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom: -5px;
+	transition: 1s;
+}
+
+.navbar ul li:hover::after{
+	width: 100%;
+}
+
+.content{
+	font-family: 'Brush Script MT';
+	font-size: 20px;
+	width: 100%;
+	position: absolute;
+	top: 33%;
+	transform: translateY(-50%);
+	text-align: center;
+	color: white;
+	
+}
+
+button{
+	width: 150px;
+	padding-top: 5px;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 100px;
+	font-weight: bold;
+	border: 3px solid #009688;
+	background: transparent;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+.prodotti{
+	margin: 50px;
+	height: 50%;
+	display: inline-block;
+	width: 300px;
+	
+}
+
+.user{
+	    width: 400px;
+		height: 425px;
+		border-radius: 15px;
+		position: relative;
+		left: 50%;
+		transform:translate(-50%);
+		top: 40px;
+		text-align: center;
+}
+
+.user #submit{
+	width: 100px;
+	padding-top: 3px;
+	text-align: center;
+	margin: 20px 10px;
+	border-radius: 100px;
+	font-weight: bold;
+	border: 3px solid #009688;
+	background: transparent;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+	
+}
+
+
+.user2{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	left: -480px;
+	top: -400px;
+}
+
+.reg{
+	width: 200px;
+	background: #009688;
+	color: white;
+	display: flex;
+	padding: 10px;
+	position:relative;
+	left:50%;
+	transform: translate(-50%);
+	border-radius: 15px;
+}
+
+.log{
+		width: 120px;
+		background: #009688;
+		color: white;
+		display: flex;
+		padding: 10px;
+		position:relative;
+		left:50%;
+		transform: translate(-50%);
+		border-radius: 15px;
+		
+	
+}
+
+
+.contact{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	left: 440px;
+	top: -20px;
+}
+
+
+.error1{
+	background: gray;
+	font-weight: bold;
+	color:red;
+}
+
+.text_email #email{
+	width: 260px;
+	height: 25px;
+	border-radius: 15px;
+	font-size: 16px;
+
+}
+
+.text_username #username {
+	width: 260px;
+	height: 25px;
+	border-radius: 15px;
+	font-size: 16px;
+}
+
+.text_password #password{
+	width: 260px;
+	height: 25px;
+	border-radius: 15px;
+	font-size: 16px;
+}
+
+.text_city #city{
+	width: 260px;
+	height: 25px;
+	border-radius: 15px;
+	font-size: 16px;
+}
+
+.text_cap #cap{
+	width: 260px;
+	height: 25px;
+	border-radius: 15px;
+	font-size: 16px;
+}
+
+.text_street #sname{
+	width: 260px;
+	height: 25px;
+	border-radius: 15px;
+	font-size: 16px;
+}
+
+
+.text_user #username {
+	width: 220px;
+	height: 25px;
+	border-radius: 12px;
+	font-size: 20px;
+}
+
+
+.text_pwd #password{
+	width: 220px;
+	height: 25px;
+	border-radius: 12px;
+	font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="/static/style.css">
+		<meta charset="UTF-8">
+		<title>Decor Idea</title>
+
+	</head>
+	
+	<body>
+		
+		
+	<div class="navbar">
+		<ul>
+			<li><a href="{{url_for('living')}}">LIVING</a></li>
+			<li><a href="{{url_for('bedroom')}}">BEDROOM</a></li>
+			<li><a href="{{url_for('bathroom')}}">BATHROOM</a></li>
+			<li><a href="{{url_for('kitchen')}}">KITCHEN</a></li>
+			
+		</ul>
+	</div>
+		
+		<div class="contact">
+			
+			<a href="{{url_for('login')}}"><button type="button"><span></span>LOGIN</button></a><br>
+			
+			<a href="{{url_for('register')}}"><button type="button"><span></span>REGISTER</button></a><br>
+			
+			<div class="logout">
+				
+				<a href="{{ url_for('logout') }}"><button type="button"><span></span>LOGOUT</button></a><br>
+				
+			</div>
+	
+
+		</div>
+
+		
+		
+		<div class="content">
+			<h1>DESIGN YOUR HOUSE</h1>
+			
+			<a href="{{url_for('contact')}}"><button type="button"><span></span>CONTACT US</button></a><br>
+								
+			</div>
+			
+			
+		<!--	<div class="pop">
+				{% if current_user.is_authenticated %}
+				<h1 class="h1first">Ciao {{ current_user.username }}, benvenuto su Decor Idea!</h1>
+				{% endif %}
+			</div> -->
+	
+		
+	</body>
+	
+</html>

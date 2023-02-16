@@ -1,0 +1,9 @@
+[ {    "id": 1,    "name": "KELIB",    "price": 199.99  },  {    "id": 2,    "name": "JACALA",    "price": 299.99  },  {    "id": 3,    "name": "GHATI",    "price": 99.99  },  {    "id": 4,    "name": "CEIBA",    "price": 234.99  },  {    "id": 5,    "name": "BAMBU",    "price": 299.99  },  {    "id": 6,    "name": "MYSA",    "price": 169.99  },  {    "id": 7,    "name": "FLUTTUA REPLIS",    "price": 499.99  },  {    "id": 8,    "name": "CLEO",    "price": 89.99  },  {    "id": 9,    "name": "LIVIO",    "price": 99.99  },  {    "id": 10,    "name": "SQUARE",  "price": 109.99 },
+  {    "id": 11,   "name": "PRINCESS",   "price": 299.99  },  {    "id": 12,    "name": "ROOTS",  "price": 49.99  },
+  {    "id": 13,   "name": "HABIT",    "price": 259.99 },  {    "id": 14,    "name": "COLETTE",  "price": 109.99 },
+  {    "id": 15,   "name": "JOSEPHINE",    "price": 799.99 },  {    "id": 16,    "name": "BERTIE",  "price": 109.99 },
+  {    "id": 17,   "name": "LINA",    "price": 99.99 },  {    "id": 18,    "name": "INDUSTRIEL",  "price": 129.99 },
+  {    "id": 19,   "name": "TRANSFORMER",    "price": 492.99 },  {    "id": 20,    "name": "ISIDORE",  "price": 149.99 },
+  {    "id": 21,   "name": "HORTSENSE",    "price": 169.99 },  {    "id": 22,    "name": "TALIA",  "price": 109.99 },
+  {    "id": 23,   "name": "MOLLY",    "price": 99.99 },  {    "id": 24,    "name": "JOTARO",  "price": 99999.99 }]
+
